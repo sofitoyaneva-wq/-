@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Няма пари</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <!-- Инфо панел -->
+        <div id="ui-header">
+            <div class="stat-item">💰 <span id="score-val">0</span></div>
+            <div class="stat-item">❤️ <span id="lives-val">3</span></div>
+            <div class="stat-item">⚡ <span id="level-val">1</span></div>
+            <div class="stat-item">🎯 <span id="goal-val">1 000 000</span></div>
+        </div>
+
+        <!-- Анимирано човече с портмоне и лице от снимката -->
+        <div id="player">
+            <img src="download.png.png" alt="Лице" id="player-face">
+        </div>
+
+        <!-- Начален екран -->
+        <div id="start-screen" class="screen">
+            <h1>НЯМА ПАРИ</h1>
+            <p>Помогнете на господин Граматиков да спечели пари!</p>
+            <button class="btn" id="start-btn">ПОЧНИ</button>
+        </div>
+
+        <!-- Екран за край на играта -->
+        <div id="gameover-screen" class="screen hidden">
+            <h1>НЯМА ПАРИ</h1>
+            <p>Помогни на господин Граматиков да спечели пари: <span id="final-score" >0</span></p>
+            <button class="btn" id="restart-btn">ОПИТАЙ ПАК</button>
+        </div>
+
+        <!-- Мобилни контроли -->
+        <div id="mobile-controls">
+            <button class="control-btn" id="left-btn">◀</button>
+            <button class="control-btn" id="right-btn">▶</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
